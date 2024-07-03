@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Msplay'website</title>
     <style>
         body {
@@ -34,6 +36,21 @@
         }
         h1, p {
             color: #fff;
+        }
+        
+        /* 添加媒体查询，用于手机屏幕 */
+        @media only screen and (max-width: 768px) {
+            /* 减小字体大小以适应手机屏幕 */
+            body {
+                font-size: 14px; /* 根据需要调整 */
+            }
+            h1 {
+                font-size: 24px; /* 根据需要调整 */
+            }
+            /* 减少容器的padding */
+            .container {
+                padding: 10px;
+            }
         }
     </style>
 </head>
