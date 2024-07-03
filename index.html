@@ -1,72 +1,54 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <!-- 设置视口，以保证页面能在不同设备上正确缩放 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Msplay's website</title>
+    <title>Msplay'website</title>
     <style>
-        /* 设置全局字体大小和颜色 */
         body {
-            font-size: 18px; /* 可根据需要调整大小 */
-            color: #d92c2c; /* 文字颜色 */
-            background-image: url('Wings of Liberty.jpg'); /* 背景图片 */
-            background-size: cover; /* 图片自动调整大小并填充整个容器 */
-            background-repeat: no-repeat; /* 不重复图片 */
-            background-position: center center; /* 图片居中显示 */
-            background-attachment: fixed; /* 图片固定在屏幕上 */
-            font-family: 'Arial', sans-serif; /* 字体 */
-            margin: 0; /* 移除默认边距 */
-            padding: 0; /* 移除默认填充 */
-            filter: drop-shadow(0 0 10px red); /* 添加红色模糊阴影 */
+            background: url('Wings of Liberty.jpg') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            color: white; /* 确保文字与背景对比度高 */
+            margin: 0;
+            font-family: Arial, sans-serif;
         }
-
-        /* 加大标题的大小和颜色 */
-        h1 {
-            font-size: 36px; /* 可根据需要调整大小 */
-            color: #d92c2c; /* 标题颜色 */
-            text-align: center; /* 居中对齐 */
-            margin-top: 50px; /* 顶部边距 */
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
         }
-
-        /* 链接的样式 */
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #ccc;
+            text-align: center;
+            padding: 10px 0;
+        }
         a {
-            color: #d92c2c; /* 链接颜色 */
-            text-decoration: none; /* 移除下划线 */
-            display: block; /* 将链接变为块级元素 */
-            margin-bottom: 10px; /* 链接间的底部边距 */
+            color: #00bfff;
+            text-decoration: none;
         }
-
-        /* 当鼠标悬停在链接上时的样式 */
-        a:hover {
-            color: #991f1f; /* 鼠标悬停时链接颜色 */
-            text-decoration: underline; /* 添加下划线 */
-        }
-
-        /* 响应式设计 - 对于小于600px的屏幕 */
-        @media (max-width: 600px) {
-            body {
-                font-size: 16px; /* 减小字体大小 */
-            }
-
-            h1 {
-                font-size: 24px; /* 减小标题大小 */
-                margin-top: 30px; /* 减少顶部边距 */
-            }
+        h1, p {
+            color: #fff;
         }
     </style>
 </head>
 <body>
-    <h1>欢迎访问Msplay的在建网站</h1>
-
-    <p>点击以下链接访问我的个人账号主页：</p>
-
-    <!-- 创建一个指向个人网站的链接 -->
-    <p><a href="https://space.bilibili.com/497510533">访问我的B站主页</a></p>
-    <p><a href="https://weibo.com/u/6875526373">访问我的微博主页</a></p>
-    <p><a href="https://github.com/Alantemper">访问我的GitHub主页</a></p>
- <footer>
-    <p>版权所有：MSPLAY，Hons/SDF，MTX © 2024</p>
-</footer>
+    <div class="container">
+        <h1>欢迎来到msplay的在建网站</h1>
+        <p>点击下面链接访问我的个人账号主页</p>
+        <p>访问我的B站主页：<a href="https://space.bilibili.com/497510533" target="_blank">点击这里</a></p>
+        <p>访问我的微博主页：<a href="https://weibo.com/u/6875526373" target="_blank">点击这里</a></p>
+        <p>访问我的Github主页：<a href="https://github.com/Alantemper" target="_blank">点击这里</a></p>
+    </div>
+    <div class="footer">
+        版权所有：<a href="https://space.bilibili.com/497510533" style="color: #ccc;">MSPLAY</a>，
+        <a href="https://space.bilibili.com/3493104917154121" style="color: #ccc;">Hons/SDF</a>，
+        <a href="https://space.bilibili.com/1673328005" style="color: #ccc;">MTX</a> © 2024
+    </div>
 </body>
 </html>
