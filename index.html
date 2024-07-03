@@ -14,12 +14,16 @@
             color: white; 
             margin: 0;
             font-family: Arial, sans-serif;
-            font-size: 16px; /* 默认字体大小 */
+            /* 为确保手机上的字体足够大 */
+            font-size: 18px;
         }
         .container {
-            max-width: 100%; /* 适应手机屏幕宽度 */
+            max-width: 100%; /* 适应屏幕宽度 */
             margin: auto;
             padding: 20px;
+            /* 增加内边距，使文字与屏幕边缘保持一定距离 */
+            padding-top: 40px;
+            padding-bottom: 60px;
         }
         .footer {
             position: fixed;
@@ -35,24 +39,22 @@
             color: #00bfff;
             text-decoration: none;
         }
-        h1 {
-            font-size: 2em; /* 增大标题字体大小 */
-            line-height: 1.2; /* 增加行高 */
+        h1, p {
+            color: #fff;
+            /* 增加行高，使得文字间有一定间隔 */
+            line-height: 1.6;
         }
-        p {
-            font-size: 1.2em; /* 增大段落字体大小 */
-            line-height: 1.5; /* 增加行高 */
-        }
-        /* 媒体查询，进一步优化小屏幕设备 */
-        @media screen and (max-width: 600px) {
+        
+        /* 针对手机屏幕的媒体查询 */
+        @media only screen and (max-width: 768px) {
             body {
-                font-size: 18px; /* 移动设备上的默认字体大小 */
+                /* 再次放大字体大小 */
+                font-size: 22px;
             }
-            h1 {
-                font-size: 2.5em; /* 移动设备上的标题字体大小 */
-            }
-            p {
-                font-size: 1.4em; /* 移动设备上的段落字体大小 */
+            .container {
+                /* 增加更多的内边距 */
+                padding-top: 60px;
+                padding-bottom: 80px;
             }
         }
     </style>
