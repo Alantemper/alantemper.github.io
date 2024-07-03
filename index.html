@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Msplay'website</title>
     <style>
         body {
@@ -9,12 +11,13 @@
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
-            color: white; /* 确保文字与背景对比度高 */
+            color: white; 
             margin: 0;
             font-family: Arial, sans-serif;
+            font-size: 16px; /* 默认字体大小 */
         }
         .container {
-            max-width: 800px;
+            max-width: 100%; /* 适应手机屏幕宽度 */
             margin: auto;
             padding: 20px;
         }
@@ -32,8 +35,25 @@
             color: #00bfff;
             text-decoration: none;
         }
-        h1, p {
-            color: #fff;
+        h1 {
+            font-size: 2em; /* 增大标题字体大小 */
+            line-height: 1.2; /* 增加行高 */
+        }
+        p {
+            font-size: 1.2em; /* 增大段落字体大小 */
+            line-height: 1.5; /* 增加行高 */
+        }
+        /* 媒体查询，进一步优化小屏幕设备 */
+        @media screen and (max-width: 600px) {
+            body {
+                font-size: 18px; /* 移动设备上的默认字体大小 */
+            }
+            h1 {
+                font-size: 2.5em; /* 移动设备上的标题字体大小 */
+            }
+            p {
+                font-size: 1.4em; /* 移动设备上的段落字体大小 */
+            }
         }
     </style>
 </head>
