@@ -1,65 +1,44 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Msplay'website</title>
     <style>
         body {
-            margin: 0;
-            background-image: url('Wings of Liberty.jpg');
-            background-repeat: no-repeat;
-            background-position: right center;
+            background: url('Wings of Liberty.jpg') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
             background-size: cover;
-            color: white;
+            color: white; /* 确保文字与背景对比度高 */
+            margin: 0;
             font-family: Arial, sans-serif;
-            display: flex;
-            min-height: 100vh;
-            flex-direction: column;
         }
-
-        .content {
-            flex-grow: 1;
+        .container {
+            max-width: 800px;
+            margin: auto;
             padding: 20px;
         }
-
         .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
             background-color: rgba(0, 0, 0, 0.5);
             color: #ccc;
             text-align: center;
             padding: 10px 0;
         }
-
-        .responsive-container {
-            max-width: 100%;
-            margin: auto;
+        a {
+            color: #00bfff;
+            text-decoration: none;
         }
-
-        .responsive-container img {
-            width: 100%;
-            height: auto;
-        }
-
-        /* Mobile styles */
-        @media (max-width: 600px) {
-            body {
-                background-size: contain;
-                background-position: center;
-            }
-
-            /* Adjusting font sizes for better readability on mobile */
-            h1 {
-                font-size: 1.5rem; /* Reduced from the default size */
-            }
-
-            p {
-                font-size: 1rem; /* Reduced from the default size */
-            }
+        h1, p {
+            color: #fff;
         }
     </style>
 </head>
 <body>
-    <div class="content responsive-container">
+    <div class="container">
         <h1>欢迎来到msplay的在建网站</h1>
         <p>点击下面链接访问我的个人账号主页</p>
         <p>访问我的B站主页：<a href="https://space.bilibili.com/497510533" target="_blank">点击这里</a></p>
